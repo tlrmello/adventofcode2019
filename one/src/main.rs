@@ -2,7 +2,7 @@ use math::round;
 use std::fs;
 
 pub fn get_orig_fuel() -> Vec<f64> {
-    let input = fs::read_to_string("src/input.csv").unwrap();
+    let input = fs::read_to_string("src/input.txt").unwrap();
     let masses: Vec<f64> = input
         .split("\n")
         .map(|x| x.parse::<f64>().unwrap())
